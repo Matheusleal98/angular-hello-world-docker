@@ -1,59 +1,46 @@
-# AngularHelloWorldDocker
+# Angular-Hello-World-Docker 🚀
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.8.
+Projeto Angular com Docker - Explorando conceitos de containerização
 
-## Development server
+## 📋 Sobre o Projeto
 
-To start a local development server, run:
+Este é um projeto Angular que estou usando para explorar e aplicar conceitos Docker. Através dele, aprendo a criar containers, orquestrar serviços e compartilhar imagens no Docker Hub.
 
-```bash
-ng serve
-```
+## 🛠️ Tecnologias Utilizadas
+- **Angular** 20.3.8
+- **Docker** & **Docker Compose**
+- **Node.js** 24.11.0 (Alpine)
+- **Spring Boot** (Backend service)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Pré-requisitos
 
 ```bash
-ng generate component component-name
+# Verificar instalações
+docker --version
+docker-compose --version
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
+### Executar com Docker Compose
 ```bash
-ng generate --help
+# Clonar o projeto
+git clone https://github.com/Matheusleal98/angular-hello-world-docker.git
+cd angular-hello-world-docker
+
+# Executar todos os serviços
+docker-compose up --build -d
+
+# Ou em modo desenvolvimento (ver logs)
+docker-compose up --build
 ```
 
-## Building
+### Acessar a Aplicação
+- **Frontend (Angular)**: http://localhost:4200
+- **Backend (Spring Boot)**: http://localhost:8080
 
-To build the project run:
+## 🎯 Conceitos Docker Explorados
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- ✅ **Criação de Dockerfiles** para aplicações Angular
+- ✅ **Build de imagens personalizadas** com Node.js Alpine
+- ✅ **Orquestração multi-serviço** com Docker Compose
+- ✅ **Networking entre containers**
+- ✅ **Otimização de cache** no build de imagens
